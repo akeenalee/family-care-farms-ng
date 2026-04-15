@@ -1,19 +1,30 @@
 import { sanityWriteClient } from "@/sanity/lib/client";
 
 export async function verifyturnstile(token: string): Promise<boolean> {
-  if (!token) return false;
+  if (!token) {
+    console.error("Turnstile: no token provided");
+    return false;
+  }
+  const secret = process.env.TURNSTILE_SECRET_KEY;
+  if (!secret || secret === "placeholder") {
+    console.error("Turnstile: secret key missing — bypassing");
+    return true;
+  }
   try {
+    const formData = new URLSearchParams();
+    formData.append("secret", secret);
+    formData.append("response", token);
+
     const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        secret: process.env.TURNSTILE_SECRET_KEY || "placeholder",
-        response: token,
-      }),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData.toString(),
     });
     const data = await res.json();
+    console.log("Turnstile verify result:", JSON.stringify(data));
     return data.success === true;
-  } catch {
+  } catch (e) {
+    console.error("Turnstile verify error:", e);
     return false;
   }
 }
