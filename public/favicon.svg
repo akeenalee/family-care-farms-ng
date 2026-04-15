@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img">
+  <title>Family Care Farms Nigeria — icon</title>
+  <circle cx="40" cy="40" r="36" fill="#2e7034"/>
+  <path d="M40,14 C58,25 66,40 58,55 C51,66 29,66 22,55 C14,40 22,25 40,14Z" fill="white"/>
+  <path d="M40,26 C35,20 27,21 27,28 C27,35 40,44 40,44 C40,44 53,35 53,28 C53,21 45,20 40,26Z" fill="#b96e1b"/>
+  <line x1="22" y1="62" x2="58" y2="62" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="40" y1="62" x2="40" y2="70" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="29" y1="65" x2="23" y2="72" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="51" y1="65" x2="57" y2="72" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

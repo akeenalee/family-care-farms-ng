@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     "dementia care Nigeria", "family care farms", "intergenerational care",
     "sustainable agriculture Nigeria",
   ],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_NG",

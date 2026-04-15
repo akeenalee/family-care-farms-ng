@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" role="img">
+  <title>Family Care Farms Initiatives Nigeria</title>
+  <!-- Icon mark -->
+  <circle cx="40" cy="40" r="32" fill="#2e7034"/>
+  <!-- Leaf -->
+  <path d="M40,16 C57,26 64,40 57,54 C50,64 30,64 23,54 C16,40 23,26 40,16Z" fill="white"/>
+  <!-- Heart -->
+  <path d="M40,28 C36,23 29,24 29,30 C29,36 40,44 40,44 C40,44 51,36 51,30 C51,24 44,23 40,28Z" fill="#b96e1b"/>
+  <!-- Roots -->
+  <line x1="24" y1="62" x2="56" y2="62" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="40" y1="62" x2="40" y2="68" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="30" y1="64" x2="25" y2="70" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="50" y1="64" x2="55" y2="70" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Wordmark -->
+  <text x="84" y="35" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#1c3c1f">Family Care Farms</text>
+  <text x="85" y="52" font-family="system-ui, sans-serif" font-size="9" fill="#b96e1b" letter-spacing="3">INITIATIVES NIGERIA</text>
+  <line x1="85" y1="60" x2="415" y2="60" stroke="#c8b98a" stroke-width="0.75"/>
+  <text x="85" y="72" font-family="system-ui, sans-serif" font-size="7.5" fill="#5a7a5b" letter-spacing="1.5">WEST AFRICA MASTER CAREFARM · EST. 2025</text>
+</svg>

@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Leaf } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -59,27 +60,27 @@ export function Navbar() {
       <div className="container-wide">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5">
-            <div
-              className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                isHome && !scrolled ? "bg-white/20" : "bg-forest-100"
-              }`}
-            >
-              <Leaf
-                className={`w-4 h-4 ${
-                  isHome && !scrolled ? "text-white" : "text-forest-600"
-                }`}
+          <Link href="/" className="flex items-center gap-0">
+            {/* Icon mark — always visible */}
+            <div className="w-10 h-10 shrink-0">
+              <Image
+                src="/images/logo-icon.svg"
+                alt="Family Care Farms Nigeria"
+                width={40}
+                height={40}
+                priority
               />
             </div>
-            <div>
+            {/* Wordmark — hidden on very small screens */}
+            <div className="ml-2 hidden sm:block">
               <div
                 className={`font-display font-semibold text-sm leading-tight transition-colors ${logoColor}`}
               >
                 Family Care Farms
               </div>
               <div
-                className={`text-[10px] tracking-widest uppercase transition-colors ${
-                  isHome && !scrolled ? "text-white/70" : "text-earth-500"
+                className={`text-[9px] tracking-[0.2em] uppercase transition-colors ${
+                  isHome && !scrolled ? "text-earth-300" : "text-earth-500"
                 }`}
               >
                 Initiatives Nigeria

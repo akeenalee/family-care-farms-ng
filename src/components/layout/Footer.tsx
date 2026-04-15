@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Leaf, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,14 +11,19 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-8 h-8 rounded-full bg-forest-800 flex items-center justify-center">
-                <Leaf className="w-4 h-4 text-forest-300" />
+              <div className="w-10 h-10 shrink-0">
+                <Image
+                  src="/images/logo-icon.svg"
+                  alt="Family Care Farms Nigeria"
+                  width={40}
+                  height={40}
+                />
               </div>
               <div>
                 <div className="font-display font-semibold text-sm leading-tight text-white">
                   Family Care Farms
                 </div>
-                <div className="text-[10px] tracking-widest uppercase text-earth-400">
+                <div className="text-[9px] tracking-[0.2em] uppercase text-earth-400">
                   Initiatives Nigeria
                 </div>
               </div>
