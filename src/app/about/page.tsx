@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Award, Globe, Handshake } from "lucide-react";
 
@@ -9,7 +10,7 @@ const timeline = [
   { year: "2022", event: "Deutscher Demografie-Preis awarded for the CareFarm concept" },
   { year: "2023", event: "Deutscher Pflegepreis — German Nursing Award" },
   { year: "2024", event: "Queen Silvia Nursing Award, presented at the Royal Palace, Stockholm" },
-  { year: "Dec 2025", event: "MOU signed in Düsseldorf — Family Care Farms Initiatives Nigeria formally established" },
+  { year: "Dec 2025", event: "MOU signed at the Deutscher Nachhaltigkeitspreis ceremony in Düsseldorf — Family Care Farms Initiatives Nigeria formally established" },
   { year: "2026", event: "West Africa Master CareFarm development begins. First pilot site in Nigeria." },
 ];
 
@@ -24,7 +25,6 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="pt-32 pb-20 bg-hero-gradient relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")` }} />
         <div className="container-wide relative z-10">
           <p className="section-label" style={{ color: "#e9bf6e" }}>About Us</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight max-w-3xl mb-6">
@@ -36,13 +36,33 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* MOU Signing Photos */}
+      <section className="py-16 bg-white">
+        <div className="container-wide">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+            <div className="col-span-2 relative rounded-sm overflow-hidden" style={{ height: "320px" }}>
+              <Image src="/images/gallery/partnership-awards.jpg" alt="Nigerian delegation with Guido Pusch holding the MOU at DNP25" fill className="object-cover" />
+            </div>
+            <div className="relative rounded-sm overflow-hidden" style={{ height: "320px" }}>
+              <Image src="/images/gallery/dnp25-award-stage.jpg" alt="Prof. Olalekan receiving award on stage at DNP25" fill className="object-cover" />
+            </div>
+            <div className="relative rounded-sm overflow-hidden" style={{ height: "320px" }}>
+              <Image src="/images/gallery/mou-signing-3-closeup.jpg" alt="MOU signing — Prof. Olalekan, Guido Pusch and delegate" fill className="object-cover" />
+            </div>
+          </div>
+          <p className="text-forest-500 text-xs text-center">
+            MOU signing ceremony at the Deutscher Nachhaltigkeitspreis (DNP25) awards, Düsseldorf — December 2025
+          </p>
+        </div>
+      </section>
+
       {/* Mission */}
       <section className="py-24 bg-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="section-label">Our Mission</p>
-              <h2 className="section-title mb-6">Dignity, Community & Sustainable Care</h2>
+              <h2 className="section-title mb-6">Dignity, Community &amp; Sustainable Care</h2>
               <p className="section-body mb-5">
                 Nigeria is facing a quiet crisis in elderly care. Traditional family structures that once provided intergenerational support are under strain. Urbanisation, migration, and economic pressure mean more elders are isolated — without care, without purpose, without community.
               </p>
@@ -60,7 +80,7 @@ export default function AboutPage() {
               {[
                 { icon: Award, title: "Award-Winning Concept", body: "Built on a model that has won six major international awards in five years — including the Queen Silvia Nursing Award and the German Sustainability Prize 2026." },
                 { icon: Globe, title: "West African Mandate", body: "Nigeria is the official Master CareFarm for West Africa — responsible for training, certification, and expanding the CareFarm franchise network across the region." },
-                { icon: Handshake, title: "Tri-Party Partnership", body: "A formal MOU between Family & Care International (Germany), Zakspreneur Limited Nigeria, and A & B Strategic Partners Ltd — signed December 2025." },
+                { icon: Handshake, title: "Tri-Party Partnership", body: "A formal MOU between Family & Care International (Germany), Zakspreneur Limited Nigeria, and A & B Strategic Partners Ltd — signed December 2025 at the DNP25 awards ceremony." },
               ].map(({ icon: Icon, title, body }) => (
                 <div key={title} className="flex gap-5 p-6 bg-cream-50 rounded-sm border border-cream-200">
                   <div className="w-10 h-10 bg-forest-100 rounded-sm flex items-center justify-center shrink-0">
@@ -72,6 +92,23 @@ export default function AboutPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Partnership Team photo */}
+      <section className="py-0">
+        <div className="container-wide">
+          <div className="grid md:grid-cols-3 gap-3">
+            <div className="relative rounded-sm overflow-hidden" style={{ height: "280px" }}>
+              <Image src="/images/gallery/mou-signing-4-people.jpg" alt="MOU signing — all four signatories" fill className="object-cover object-top" />
+            </div>
+            <div className="relative rounded-sm overflow-hidden" style={{ height: "280px" }}>
+              <Image src="/images/gallery/dnp25-handshake1.jpg" alt="Prof. Olalekan networking at DNP25" fill className="object-cover" />
+            </div>
+            <div className="relative rounded-sm overflow-hidden" style={{ height: "280px" }}>
+              <Image src="/images/gallery/dnp25-handshake2.jpg" alt="Partnership handshake at DNP25 gala" fill className="object-cover" />
             </div>
           </div>
         </div>

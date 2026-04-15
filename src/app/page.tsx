@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Heart, Sprout, Users, GraduationCap, Globe, Award, ChevronRight } from "lucide-react";
 
 const services = [
@@ -70,7 +71,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CONCEPT */}
+      {/* PARTNERSHIP PHOTO BANNER */}
+      <section className="py-0 bg-white">
+        <div className="container-wide">
+          <div className="grid grid-cols-3 gap-3">
+            <div className="col-span-2 relative rounded-sm overflow-hidden" style={{ height: "300px" }}>
+              <Image src="/images/gallery/partnership-awards.jpg" alt="Nigerian partners with Guido Pusch (Family & Care International) at DNP25 Düsseldorf" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-forest-950/60 to-transparent" />
+              <div className="absolute bottom-5 left-5 text-white">
+                <div className="text-xs font-semibold tracking-widest uppercase text-earth-300 mb-1">December 2025 · Düsseldorf</div>
+                <div className="font-display text-lg font-semibold">MOU Signed at Deutscher Nachhaltigkeitspreis</div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3">
+              <div className="relative rounded-sm overflow-hidden flex-1">
+                <Image src="/images/gallery/dnp25-award-stage.jpg" alt="Prof. Olalekan receiving DNP25 award" fill className="object-cover object-top" />
+              </div>
+              <div className="relative rounded-sm overflow-hidden flex-1">
+                <Image src="/images/gallery/dnp25-handshake2.jpg" alt="Partnership handshake at DNP25" fill className="object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="py-24 bg-cream-50">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-16 items-center">

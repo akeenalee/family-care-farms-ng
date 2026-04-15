@@ -7,10 +7,11 @@ export async function verifyturnstile(token: string): Promise<boolean> {
   }
   const secret = process.env.TURNSTILE_SECRET_KEY;
   if (!secret || secret === "placeholder") {
-    console.error("Turnstile: secret key missing — bypassing");
-    return true;
+    console.error("Turnstile: secret key missing or placeholder — bypassing in dev");
+    return true; // allow through if secret not configured
   }
   try {
+    // Turnstile requires form-encoded body, not JSON
     const formData = new URLSearchParams();
     formData.append("secret", secret);
     formData.append("response", token);
