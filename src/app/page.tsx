@@ -84,13 +84,13 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <div className="relative rounded-sm overflow-hidden flex-1">
-                <Image src="/images/gallery/dnp25-award-stage.jpg" alt="Prof. Olalekan receiving DNP25 award" fill className="object-cover object-top" />
-              </div>
-              <div className="relative rounded-sm overflow-hidden flex-1">
-                <Image src="/images/gallery/dnp25-handshake2.jpg" alt="Partnership handshake at DNP25" fill className="object-cover" />
-              </div>
-            </div>
+  <div className="relative rounded-sm overflow-hidden flex-1">
+    <Image src="/images/gallery/dnp25-handshake1.jpg" alt="Prof. Olalekan networking at DNP25" fill className="object-cover object-center" />
+  </div>
+  <div className="relative rounded-sm overflow-hidden flex-1">
+    <Image src="/images/gallery/dnp25-handshake2.jpg" alt="Partnership handshake at DNP25" fill className="object-cover object-center" />
+  </div>
+</div>
           </div>
         </div>
       </section>
