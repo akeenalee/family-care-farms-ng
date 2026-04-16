@@ -9,39 +9,39 @@ const steps = [
   {
     number: "01",
     title: "A Farm, Not a Facility",
-    body: "The CareFarm is a working agricultural property — with animals, gardens, crops, and open land. It is not a hospital or nursing home. Residents live in the farm household as part of the community.",
+    body: "This is a real farm. Animals, gardens, crops, open land. Not a clinic or nursing home. People who live here are part of the household, not patients in a facility.",
     photo: "/images/farm/farm-photo-003.jpg",
     photoAlt: "Working farmland at the Family & Care CareFarm",
-    photoCaption: "A real working farm — not an institution",
+    photoCaption: "A real working farm, not an institution",
   },
   {
     number: "02",
     title: "Professional Care Integrated into Daily Life",
-    body: "Qualified caregivers provide medical and personal care — but within the context of ordinary farm life, not a clinical setting. Morning routines, meals, and activities happen naturally alongside farm rhythms.",
+    body: "Qualified caregivers handle medical and personal care, but it happens within ordinary farm life. Morning routines, meals, outdoor work. Care is woven in, not imposed on top.",
     photo: "/images/farm/farm-photo-001.jpg",
     photoAlt: "Guido Pusch with farm resident on tractor",
-    photoCaption: "The farmer and the resident — working side by side",
+    photoCaption: "The farmer and the resident, working side by side",
   },
   {
     number: "03",
     title: "Residents Have Roles and Purpose",
-    body: "Every resident contributes according to their ability — feeding chickens, harvesting vegetables, telling stories to younger visitors, preparing food. Participation creates dignity, not dependence.",
+    body: "Feeding chickens. Harvesting vegetables. Helping prepare food. Telling stories to younger visitors. Everyone has something to give, and that matters more than most people expect.",
     photo: "/images/farm/farm-photo-006.jpg",
     photoAlt: "Nigerian delegate walking alpaca at golden hour",
-    photoCaption: "Walking the alpacas — everyone has a role on the farm",
+    photoCaption: "Walking the alpacas, everyone has a role on the farm",
   },
   {
     number: "04",
     title: "Intergenerational by Design",
-    body: "Young people — students, volunteers, apprentices — are part of the community. Children visit. Youth learn caregiving and farming. Elders share wisdom. Generations mix naturally.",
+    body: "Students, apprentices, volunteers, children visiting grandparents. The farm brings different ages together without trying to. That is just what happens when a community shares a place.",
     photo: "/images/farm/farm-photo-011.jpg",
     photoAlt: "Elder and Nigerian delegate walking alpacas together at sunset",
-    photoCaption: "Generations walking together — the CareFarm way",
+    photoCaption: "Generations walking together, the CareFarm way",
   },
   {
     number: "05",
     title: "Nature as Therapy",
-    body: "Animals, soil, seasons, and fresh air are not incidental — they are the therapy. Evidence shows regular contact with nature and animals reduces depression, agitation, and cognitive decline in elders.",
+    body: "The animals, the soil, the changing seasons. These are not background scenery. Research consistently shows that regular contact with nature and animals reduces depression and agitation in older people. The farm is the treatment.",
     photo: "/images/gallery/mou-signing-3-closeup.jpg",
     photoAlt: "Partnership bringing the CareFarm concept to Nigeria",
     photoCaption: "Bringing nature-based care to West Africa",
@@ -49,10 +49,10 @@ const steps = [
   {
     number: "06",
     title: "Families Stay Connected",
-    body: "Unlike traditional institutions, the CareFarm welcomes family visits any time. Families participate in farm life, share meals, and remain genuinely present in their loved one's world.",
+    body: "Family can visit any time. They can join for meals, help with the animals, sit outside. People do not disappear into a facility here. Families stay involved.",
     photo: "/images/farm/farm-photo-002.jpg",
     photoAlt: "Nigerian delegation planning West Africa CareFarm",
-    photoCaption: "Planning West Africa's first CareFarm — Nigeria leads the way",
+    photoCaption: "Planning West Africa's first CareFarm, Nigeria leads the way",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function HowItWorksPage() {
             How the CareFarm Model Works
           </h1>
           <p className="text-white/80 text-lg max-w-2xl leading-relaxed">
-            A fundamentally different approach to elderly care — built on community, nature, purpose, and human connection.
+            A fundamentally different approach to elderly care, built on community, nature, purpose, and human connection.
           </p>
         </div>
       </section>
@@ -99,7 +99,7 @@ export default function HowItWorksPage() {
             &ldquo;All&apos;s well that ends well when life has a home until the very end, connecting trust and generations.&rdquo;
           </blockquote>
           <cite className="text-forest-500 text-sm mt-4 block not-italic">
-            — Guido Pusch, Founder, Family &amp; Care International
+           , Guido Pusch, Founder, Family &amp; Care International
           </cite>
         </div>
       </section>
@@ -181,13 +181,13 @@ export default function HowItWorksPage() {
               <p className="section-label">Why Nigeria Needs This</p>
               <h2 className="section-title mb-6">Built for Our Reality</h2>
               <p className="section-body mb-5">
-                Nigeria has a deep cultural tradition of caring for elders within the extended family. But rapid urbanisation, rising mobility, and the pressures of modern economic life mean millions of families can no longer maintain that tradition alone.
+                Nigeria has always cared for its elders within the family. That tradition runs deep. But urbanisation, economic pressure, and distance are making it harder for families to hold that responsibility alone.
               </p>
               <p className="section-body mb-5">
-                The CareFarm model does not replace the family — it supports it. It provides a community that feels like family: familiar, purposeful, connected to nature, and rooted in respect.
+                The CareFarm does not replace the family. It supports it. A community with purpose, connection to the land, and genuine respect for older people.
               </p>
               <p className="section-body mb-8">
-                Adapted from the award-winning German model and tailored to the Nigerian and West African context, Family Care Farm Initiatives Nigeria is building something that belongs here.
+                Family Care Farm Initiatives Nigeria is adapting this award-winning German model for our own soil, our own culture, our own families.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/apply/resident" className="btn-primary">

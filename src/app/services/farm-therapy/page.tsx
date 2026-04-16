@@ -6,12 +6,12 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = { title: "Farm Therapy" };
 
 const therapies = [
-  { emoji: "🦙", name: "Animal-Assisted Activities", body: "Daily contact with alpacas, goats, chickens, horses and donkeys reduces cortisol, lowers blood pressure, and creates genuine moments of joy. Even residents with advanced dementia respond to animals." },
-  { emoji: "🌱", name: "Horticultural Therapy", body: "Planting, tending, and harvesting creates a cycle of care and reward. Soil contact, physical movement, and the satisfaction of growing food are powerful therapeutic tools." },
-  { emoji: "☀️", name: "Green Care & Nature Exposure", body: "Time outdoors — sunlight, fresh air, birdsong, and seasons — regulates mood, sleep, and physical health in ways no indoor programme can match." },
-  { emoji: "🍳", name: "Culinary Participation", body: "Preparing and sharing farm food connects residents to a lifelong familiar activity. The smell of cooking and the act of preparing are deeply embedded in memory and identity." },
-  { emoji: "🚜", name: "Farm Work & Occupation", body: "Light meaningful farm tasks — feeding animals, collecting eggs, tending the garden — maintain motor skills and the profound human need to feel useful and valued." },
-  { emoji: "🎵", name: "Music & Cultural Activities", body: "Nigerian music traditions, storytelling, prayer, and celebration are woven into the week. Culture is not an add-on — it is the fabric of wellbeing." },
+  { emoji: "🦙", name: "Animal-Assisted Activities", body: "Spending time with alpacas, goats, chickens, horses and donkeys does something that medication cannot always do. Blood pressure drops. People who have been withdrawn for months will reach out to touch an animal." },
+  { emoji: "🌱", name: "Horticultural Therapy", body: "Planting something and watching it grow gives people a reason to check on it tomorrow. Soil contact, movement, and the straightforward satisfaction of producing food are things no pill replicates." },
+  { emoji: "☀️", name: "Green Care & Nature Exposure", body: "Sunlight, fresh air, birdsong, the feel of seasons changing. These are basic human needs. Most care facilities make them optional. Here they are the default." },
+  { emoji: "🍳", name: "Culinary Participation", body: "The smell of food cooking reaches people in ways that conversation sometimes cannot. Preparing meals together is something most older Nigerians have done their whole lives. That familiarity matters." },
+  { emoji: "🚜", name: "Farm Work & Occupation", body: "Collecting eggs. Feeding animals. Watering the garden. Simple tasks, but they give the day a shape and give the person a role. Feeling useful is not a luxury for older people. It is essential." },
+  { emoji: "🎵", name: "Music & Cultural Activities", body: "Music, storytelling, prayer, celebration. Nigerian cultural life does not stop at a certain age. It is woven into the week, not treated as entertainment or filler." },
 ];
 
 export default function FarmTherapyPage() {
@@ -20,7 +20,7 @@ export default function FarmTherapyPage() {
       {/* Hero with real alpaca photo */}
       <section className="relative min-h-[60vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/farm/alpaca-golden-hour.jpg" alt="Walking the alpacas at golden hour — animal therapy at the Family & CareFarm" fill className="object-cover" priority />
+          <Image src="/images/farm/alpaca-golden-hour.jpg" alt="Walking the alpacas at golden hour, animal therapy at the Family & CareFarm" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/30 to-transparent" />
         </div>
         <div className="container-wide relative z-10 pb-16 pt-32">
@@ -29,14 +29,14 @@ export default function FarmTherapyPage() {
             Farm Therapy
           </h1>
           <p className="text-white/80 text-lg max-w-2xl leading-relaxed">
-            Nature, animals, soil, and seasons are not backdrop — they are the medicine. The farm itself is the therapeutic environment.
+            The farm is not a backdrop for care. It is the care. Animals, soil, seasons, and outdoor work are what make this different from anywhere else.
           </p>
         </div>
       </section>
 
       <section className="py-16 bg-cream-50">
         <div className="container-narrow text-center">
-          <p className="section-body max-w-2xl mx-auto">Green care — therapeutic approaches using nature, animals, and agriculture — has decades of evidence behind it. What Family &amp; Care International did was build an entire living model around it. Not a programme. A place.</p>
+          <p className="section-body max-w-2xl mx-auto">Nature-based care has solid evidence behind it. What Family &amp; Care International did was stop treating it as a programme and build a whole place around it instead.</p>
         </div>
       </section>
 
@@ -47,12 +47,12 @@ export default function FarmTherapyPage() {
             <div className="relative rounded-sm overflow-hidden" style={{ height: "380px" }}>
               <Image src="/images/farm/alpaca-walk-sunset.jpg" alt="Elder and Nigerian delegate walking alpacas together at sunset" fill className="object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-forest-950/70 to-transparent p-5">
-                <p className="text-white text-sm font-semibold">Walking the alpacas — resident and caregiver together</p>
+                <p className="text-white text-sm font-semibold">Walking the alpacas, resident and caregiver together</p>
                 <p className="text-white/70 text-xs">Animal-assisted therapy in action at the Family & Care CareFarm</p>
               </div>
             </div>
             <div className="relative rounded-sm overflow-hidden" style={{ height: "380px" }}>
-              <Image src="/images/farm/tractor-farmland.jpg" alt="Working farmland — sustainable agriculture at the Family & CareFarm" fill className="object-cover" />
+              <Image src="/images/farm/tractor-farmland.jpg" alt="Working farmland, sustainable agriculture at the Family & CareFarm" fill className="object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-forest-950/70 to-transparent p-5">
                 <p className="text-white text-sm font-semibold">Working farmland</p>
                 <p className="text-white/70 text-xs">Sustainable agriculture is at the heart of the CareFarm concept</p>
