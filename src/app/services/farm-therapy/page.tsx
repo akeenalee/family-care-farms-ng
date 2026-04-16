@@ -1,32 +1,64 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = { title: "Farm Therapy" };
 
 const therapies = [
-  { emoji: "🐐", name: "Animal-Assisted Activities", body: "Daily contact with goats, chickens, and rabbits reduces cortisol, lowers blood pressure, and creates genuine moments of joy. Even residents with advanced dementia respond to animals." },
+  { emoji: "🦙", name: "Animal-Assisted Activities", body: "Daily contact with alpacas, goats, chickens, horses and donkeys reduces cortisol, lowers blood pressure, and creates genuine moments of joy. Even residents with advanced dementia respond to animals." },
   { emoji: "🌱", name: "Horticultural Therapy", body: "Planting, tending, and harvesting creates a cycle of care and reward. Soil contact, physical movement, and the satisfaction of growing food are powerful therapeutic tools." },
   { emoji: "☀️", name: "Green Care & Nature Exposure", body: "Time outdoors — sunlight, fresh air, birdsong, and seasons — regulates mood, sleep, and physical health in ways no indoor programme can match." },
   { emoji: "🍳", name: "Culinary Participation", body: "Preparing and sharing farm food connects residents to a lifelong familiar activity. The smell of cooking and the act of preparing are deeply embedded in memory and identity." },
-  { emoji: "🤲", name: "Occupational Engagement", body: "Light meaningful tasks — folding, sorting, crafting — maintain motor skills, cognitive engagement, and the profound human need to feel useful and valued." },
+  { emoji: "🚜", name: "Farm Work & Occupation", body: "Light meaningful farm tasks — feeding animals, collecting eggs, tending the garden — maintain motor skills and the profound human need to feel useful and valued." },
   { emoji: "🎵", name: "Music & Cultural Activities", body: "Nigerian music traditions, storytelling, prayer, and celebration are woven into the week. Culture is not an add-on — it is the fabric of wellbeing." },
 ];
 
 export default function FarmTherapyPage() {
   return (
     <>
-      <section className="pt-32 pb-20 bg-hero-gradient">
-        <div className="container-wide">
+      {/* Hero with real alpaca photo */}
+      <section className="relative min-h-[60vh] flex items-end overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/images/farm/alpaca-golden-hour.jpg" alt="Walking the alpacas at golden hour — animal therapy at the Family & CareFarm" fill className="object-cover" priority />
+          <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/30 to-transparent" />
+        </div>
+        <div className="container-wide relative z-10 pb-16 pt-32">
           <p className="section-label" style={{ color: "#e9bf6e" }}>Services</p>
-          <h1 className="font-display text-4xl md:text-5xl text-white font-bold leading-tight max-w-3xl mb-6">Farm Therapy</h1>
-          <p className="text-white/80 text-lg max-w-2xl leading-relaxed">Nature, animals, soil, and seasons are not backdrop — they are the medicine. The farm itself is the therapeutic environment.</p>
+          <h1 className="font-display text-4xl md:text-5xl text-white font-bold leading-tight max-w-3xl mb-4">
+            Farm Therapy
+          </h1>
+          <p className="text-white/80 text-lg max-w-2xl leading-relaxed">
+            Nature, animals, soil, and seasons are not backdrop — they are the medicine. The farm itself is the therapeutic environment.
+          </p>
         </div>
       </section>
 
       <section className="py-16 bg-cream-50">
         <div className="container-narrow text-center">
           <p className="section-body max-w-2xl mx-auto">Green care — therapeutic approaches using nature, animals, and agriculture — has decades of evidence behind it. What Family &amp; Care International did was build an entire living model around it. Not a programme. A place.</p>
+        </div>
+      </section>
+
+      {/* Alpaca walk photo feature */}
+      <section className="py-0">
+        <div className="container-wide">
+          <div className="grid md:grid-cols-2 gap-3">
+            <div className="relative rounded-sm overflow-hidden" style={{ height: "380px" }}>
+              <Image src="/images/farm/alpaca-walk-sunset.jpg" alt="Elder and Nigerian delegate walking alpacas together at sunset" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-forest-950/70 to-transparent p-5">
+                <p className="text-white text-sm font-semibold">Walking the alpacas — resident and caregiver together</p>
+                <p className="text-white/70 text-xs">Animal-assisted therapy in action at the Family & Care CareFarm</p>
+              </div>
+            </div>
+            <div className="relative rounded-sm overflow-hidden" style={{ height: "380px" }}>
+              <Image src="/images/farm/tractor-farmland.jpg" alt="Working farmland — sustainable agriculture at the Family & CareFarm" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-forest-950/70 to-transparent p-5">
+                <p className="text-white text-sm font-semibold">Working farmland</p>
+                <p className="text-white/70 text-xs">Sustainable agriculture is at the heart of the CareFarm concept</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

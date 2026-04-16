@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = { title: "Intergenerational Community" };
@@ -14,8 +15,12 @@ const connections = [
 export default function IntergenerationalPage() {
   return (
     <>
-      <section className="pt-32 pb-20 bg-hero-gradient">
-        <div className="container-wide">
+      <section className="relative min-h-[55vh] flex items-end overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/images/farm/alpaca-walk-sunset.jpg" alt="Elder and Nigerian delegate walking alpacas together — intergenerational connection at the Family CareFarm" fill className="object-cover" priority />
+          <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/30 to-transparent" />
+        </div>
+        <div className="container-wide relative z-10 pb-16 pt-32">
           <p className="section-label" style={{ color: "#e9bf6e" }}>Our Model</p>
           <h1 className="font-display text-4xl md:text-5xl text-white font-bold leading-tight max-w-3xl mb-6">
             Where Generations Meet
