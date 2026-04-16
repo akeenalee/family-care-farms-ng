@@ -15,9 +15,9 @@ const connections = [
 export default function IntergenerationalPage() {
   return (
     <>
-      <section className="relative min-h-[65vh] flex items-end overflow-hidden">
+      <section className="relative min-h-[75vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/farm/farm-photo-006.jpg" alt="Nigerian delegate walking white alpaca at golden hour — intergenerational connection at the Family CareFarm" fill className="object-cover object-center" priority />
+          <Image src="/images/farm/farm-photo-006.jpg" alt="Nigerian delegate walking white alpaca at golden hour — intergenerational connection at the Family CareFarm" fill className="object-cover object-[center_30%]" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/30 to-transparent" />
         </div>
         <div className="container-wide relative z-10 pb-16 pt-32">
