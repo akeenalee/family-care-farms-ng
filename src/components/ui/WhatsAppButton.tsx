@@ -5,7 +5,7 @@ import { X, MessageCircle } from "lucide-react";
 
 export function WhatsAppButton() {
   const [tooltip, setTooltip] = useState(true);
-  const phone = "234000000000"; // placeholder — update when client confirms
+  const phone = "2348036679255"; // placeholder — update when client confirms
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
