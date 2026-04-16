@@ -126,7 +126,7 @@ export default function StaffApplicationPage() {
                 </div>
               </div>
               <div className="mt-5">
-                <label className="input-label">Why do you want to join Family Care Farms? *</label>
+                <label className="input-label">Why do you want to join Family & CareFarm Nigeria? *</label>
                 <textarea {...register("motivation")} rows={5} className="input-field resize-none" placeholder="Tell us what draws you to this work and what you'd bring to the team..." />
                 {errors.motivation && <p className="text-red-500 text-xs mt-1">{errors.motivation.message}</p>}
               </div>

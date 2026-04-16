@@ -41,7 +41,7 @@ export default function HomePage() {
               Care That Feels<span className="block italic text-earth-300">Like Coming Home.</span>
             </h1>
             <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
-              Family Care Farms Initiatives Nigeria integrates professional elderly care with farm life, community, and nature — building West Africa&apos;s first CareFarm, certified by Family &amp; Care International, Germany.
+              Family & CareFarm Nigeria integrates professional elderly care with farm life, community, and nature — building West Africa&apos;s first CareFarm, certified by Family &amp; Care International, Germany.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/model/how-it-works" className="btn-earth">Discover Our Model <ArrowRight className="w-4 h-4" /></Link>
@@ -84,13 +84,13 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-  <div className="relative rounded-sm overflow-hidden flex-1">
-    <Image src="/images/gallery/dnp25-handshake1.jpg" alt="Prof. Olalekan networking at DNP25" fill className="object-cover object-center" />
-  </div>
-  <div className="relative rounded-sm overflow-hidden flex-1">
-    <Image src="/images/gallery/dnp25-handshake2.jpg" alt="Partnership handshake at DNP25" fill className="object-cover object-center" />
-  </div>
-</div>
+              <div className="relative rounded-sm overflow-hidden flex-1">
+                <Image src="/images/gallery/dnp25-handshake1.jpg" alt="Prof. Olalekan networking at DNP25" fill className="object-cover object-center" />
+              </div>
+              <div className="relative rounded-sm overflow-hidden flex-1">
+                <Image src="/images/gallery/dnp25-handshake2.jpg" alt="Partnership handshake at DNP25" fill className="object-cover object-center" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function HomePage() {
               <p className="section-label">What We Do</p>
               <h2 className="section-title mb-6">A New Way to Care for Our Elders in Nigeria</h2>
               <p className="section-body mb-6">In Nigeria, caring for the elderly has always been a family matter. But urbanisation, migration, and changing family structures are making that harder. Elders are being left behind — separated from community, purpose, and the dignity they deserve.</p>
-              <p className="section-body mb-8">Family Care Farms Initiatives Nigeria offers a third way: not a clinical nursing home, and not a burden on overstretched families — but a living, breathing community where elders participate, belong, and thrive.</p>
+              <p className="section-body mb-8">Family & CareFarm Nigeria offers a third way: not a clinical nursing home, and not a burden on overstretched families — but a living, breathing community where elders participate, belong, and thrive.</p>
               <Link href="/model/how-it-works" className="btn-primary">How It Works <ArrowRight className="w-4 h-4" /></Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -145,6 +145,27 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* GUIDO QUOTE + OFFICIAL PARTNER BADGE */}
+      <section className="py-20 bg-white">
+        <div className="container-narrow text-center">
+          {/* Official partner badge */}
+          <div className="inline-flex items-center gap-3 border border-forest-200 rounded-sm px-5 py-3 mb-10">
+            <Image src="/images/logo-fc-official.png" alt="Family & Care International" width={36} height={36} className="object-contain" />
+            <span className="text-xs font-semibold text-forest-700 tracking-widest uppercase">
+              Official Partner · Family &amp; Care International, Germany
+            </span>
+          </div>
+
+          {/* Guido quote */}
+          <blockquote className="font-display text-2xl md:text-3xl lg:text-4xl text-forest-900 italic leading-relaxed max-w-3xl mx-auto mb-6">
+            &ldquo;All&apos;s well that ends well — when life has a home until the very end, connecting trust and generations.&rdquo;
+          </blockquote>
+          <cite className="text-earth-600 text-sm font-semibold not-italic tracking-wide">
+            — Guido Pusch, Founder · Family &amp; Care International
+          </cite>
+        </div>
+      </section>
+
       {/* WEST AFRICA MANDATE */}
       <section className="py-24 bg-forest-950 relative overflow-hidden">
         <div className="container-wide relative z-10">
@@ -183,40 +204,6 @@ export default function HomePage() {
                 <Link href={item.href} className={item.variant}>
                   {item.cta} <ArrowRight className="w-4 h-4" />
                 </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PHOTO GALLERY */}
-      <section className="py-16 bg-cream-50">
-        <div className="container-wide">
-          <div className="text-center mb-10">
-            <p className="section-label">Our Journey</p>
-            <h2 className="section-title">At the Heart of the Partnership</h2>
-            <p className="section-body max-w-xl mx-auto mt-3">
-              The Nigerian delegation at the Deutscher Nachhaltigkeitspreis (DNP25) awards
-              ceremony in Düsseldorf, December 2025 — where the MOU was signed.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-            {[
-              { src: "/images/gallery/mou-signing-4-people.jpg", alt: "MOU signing — all four signatories" },
-              { src: "/images/gallery/mou-signing-alt1.jpg", alt: "MOU signing ceremony" },
-              { src: "/images/gallery/mou-signing-alt2.jpg", alt: "Partnership agreement signing" },
-              { src: "/images/gallery/mou-signing-alt3.jpg", alt: "Nigerian delegation with Guido Pusch" },
-              { src: "/images/gallery/mou-signing-alt4.jpg", alt: "MOU document exchange" },
-              { src: "/images/gallery/mou-signing-3-people.jpg", alt: "Three-party signing" },
-              { src: "/images/gallery/mou-document-review.jpg", alt: "Reviewing the MOU document" },
-              { src: "/images/gallery/dnp25-award-stage.jpg", alt: "DNP25 award ceremony stage" },
-              { src: "/images/gallery/dnp25-handshake1.jpg", alt: "Partnership handshake" },
-              { src: "/images/gallery/dnp25-handshake2.jpg", alt: "Networking at DNP25 gala" },
-              { src: "/images/gallery/mou-signing-3-closeup.jpg", alt: "Close-up MOU signing" },
-              { src: "/images/gallery/partnership-awards.jpg", alt: "Team with DNP25 awards" },
-            ].map((photo) => (
-              <div key={photo.src} className="relative rounded-sm overflow-hidden" style={{ height: "180px" }}>
-                <Image src={photo.src} alt={photo.alt} fill className="object-cover hover:scale-105 transition-transform duration-300" />
               </div>
             ))}
           </div>

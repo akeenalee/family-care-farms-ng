@@ -6,8 +6,8 @@ import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: {
-    default: "Family Care Farms Initiatives Nigeria",
-    template: "%s | Family Care Farms Initiatives Nigeria",
+    default: "Family & CareFarm Nigeria",
+    template: "%s | Family & CareFarm Nigeria",
   },
   description:
     "West Africa's first Family & Care Farm — integrating professional elderly care with sustainable agriculture, community living, and intergenerational connection. Master CareFarm for West Africa.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_NG",
-    siteName: "Family Care Farms Initiatives Nigeria",
+    siteName: "Family & CareFarm Nigeria",
   },
 };
 

@@ -13,18 +13,18 @@ export function Footer() {
             <div className="flex items-center gap-2.5 mb-5">
               <div className="w-10 h-10 shrink-0">
                 <Image
-                  src="/images/logo-icon.svg"
-                  alt="Family Care Farms Nigeria"
+                  src="/images/logo-fc-official.png"
+                  alt="Family & CareFarm Nigeria"
                   width={40}
                   height={40}
                 />
               </div>
               <div>
                 <div className="font-display font-semibold text-sm leading-tight text-white">
-                  Family Care Farms
+                  Family & CareFarm
                 </div>
                 <div className="text-[9px] tracking-[0.2em] uppercase text-earth-400">
-                  Initiatives Nigeria
+                  Nigeria · West Africa
                 </div>
               </div>
             </div>
@@ -132,7 +132,7 @@ export function Footer() {
       <div className="border-t border-forest-800">
         <div className="container-wide py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-forest-500">
           <p>
-            © {new Date().getFullYear()} Family Care Farms Initiatives Nigeria.
+            © {new Date().getFullYear()} Family & CareFarm Nigeria · West Africa.
             All rights reserved.
           </p>
           <div className="flex items-center gap-6">
