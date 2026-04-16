@@ -41,7 +41,7 @@ export default function HomePage() {
               Care That Feels<span className="block italic text-earth-300">Like Coming Home.</span>
             </h1>
             <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
-              Family Care Farm Initiatives Nigeria integrates professional elderly care with farm life, community, and nature — building West Africa&apos;s first CareFarm, certified by Family &amp; Care International, Germany.
+              Family & CareFarm Nigeria integrates professional elderly care with farm life, community, and nature — building West Africa&apos;s first CareFarm, certified by Family &amp; Care International, Germany.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/model/how-it-works" className="btn-earth">Discover Our Model <ArrowRight className="w-4 h-4" /></Link>
@@ -103,7 +103,7 @@ export default function HomePage() {
               <p className="section-label">What We Do</p>
               <h2 className="section-title mb-6">A New Way to Care for Our Elders in Nigeria</h2>
               <p className="section-body mb-6">In Nigeria, caring for the elderly has always been a family matter. But urbanisation, migration, and changing family structures are making that harder. Elders are being left behind — separated from community, purpose, and the dignity they deserve.</p>
-              <p className="section-body mb-8">Family Care Farm Initiatives Nigeria offers a third way: not a clinical nursing home, and not a burden on overstretched families — but a living, breathing community where elders participate, belong, and thrive.</p>
+              <p className="section-body mb-8">Family & CareFarm Nigeria offers a third way: not a clinical nursing home, and not a burden on overstretched families — but a living, breathing community where elders participate, belong, and thrive.</p>
               <Link href="/model/how-it-works" className="btn-primary">How It Works <ArrowRight className="w-4 h-4" /></Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -184,6 +184,53 @@ export default function HomePage() {
               ))}
             </div>
             <Link href="/west-africa" className="btn-earth">Our West Africa Vision <ArrowRight className="w-4 h-4" /></Link>
+          </div>
+        </div>
+      </section>
+
+      {/* VIDEOS */}
+      <section className="py-24 bg-cream-50">
+        <div className="container-wide">
+          <div className="text-center mb-12">
+            <p className="section-label">See It For Yourself</p>
+            <h2 className="section-title">The Family & CareFarm in Action</h2>
+            <p className="section-body max-w-xl mx-auto mt-3">
+              Watch how the award-winning Family & Care concept works — and what it means for the people who live and work on the farm.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Video 1 */}
+            <div className="bg-white rounded-sm overflow-hidden border border-forest-100 shadow-sm">
+              <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/3Ewqbf34GPs"
+                  title="Family & CareFarm — The Concept"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-display font-semibold text-forest-900 mb-1">The Family & CareFarm Concept</h3>
+                <p className="text-forest-600 text-sm">An introduction to the award-winning care farm model — how it works, what it feels like, and why it matters.</p>
+              </div>
+            </div>
+            {/* Video 2 */}
+            <div className="bg-white rounded-sm overflow-hidden border border-forest-100 shadow-sm">
+              <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/bsdLgeCmL_g"
+                  title="Family & CareFarm — Life on the Farm"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-display font-semibold text-forest-900 mb-1">Life on the Family & CareFarm</h3>
+                <p className="text-forest-600 text-sm">A closer look at daily life — the animals, the people, the rhythm of the farm, and the community that makes it work.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
