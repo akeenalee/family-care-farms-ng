@@ -29,6 +29,7 @@ const navLinks = [
   },
   { label: "West Africa Hub", href: "/west-africa" },
   { label: "News", href: "/news" },
+  { label: "Gallery", href: "/gallery" },
 ];
 
 export function Navbar() {
