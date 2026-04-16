@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
@@ -9,31 +10,49 @@ const steps = [
     number: "01",
     title: "A Farm, Not a Facility",
     body: "The CareFarm is a working agricultural property — with animals, gardens, crops, and open land. It is not a hospital or nursing home. Residents live in the farm household as part of the community.",
+    photo: "/images/farm/farm-photo-003.jpg",
+    photoAlt: "Working farmland at the Family & Care CareFarm",
+    photoCaption: "A real working farm — not an institution",
   },
   {
     number: "02",
     title: "Professional Care Integrated into Daily Life",
     body: "Qualified caregivers provide medical and personal care — but within the context of ordinary farm life, not a clinical setting. Morning routines, meals, and activities happen naturally alongside farm rhythms.",
+    photo: "/images/farm/farm-photo-001.jpg",
+    photoAlt: "Guido Pusch with farm resident on tractor",
+    photoCaption: "The farmer and the resident — working side by side",
   },
   {
     number: "03",
     title: "Residents Have Roles and Purpose",
     body: "Every resident contributes according to their ability — feeding chickens, harvesting vegetables, telling stories to younger visitors, preparing food. Participation creates dignity, not dependence.",
+    photo: "/images/farm/farm-photo-006.jpg",
+    photoAlt: "Nigerian delegate walking alpaca at golden hour",
+    photoCaption: "Walking the alpacas — everyone has a role on the farm",
   },
   {
     number: "04",
     title: "Intergenerational by Design",
     body: "Young people — students, volunteers, apprentices — are part of the community. Children visit. Youth learn caregiving and farming. Elders share wisdom. Generations mix naturally.",
+    photo: "/images/farm/farm-photo-011.jpg",
+    photoAlt: "Elder and Nigerian delegate walking alpacas together at sunset",
+    photoCaption: "Generations walking together — the CareFarm way",
   },
   {
     number: "05",
     title: "Nature as Therapy",
     body: "Animals, soil, seasons, and fresh air are not incidental — they are the therapy. Evidence shows regular contact with nature and animals reduces depression, agitation, and cognitive decline in elders.",
+    photo: "/images/gallery/mou-signing-3-closeup.jpg",
+    photoAlt: "Partnership bringing the CareFarm concept to Nigeria",
+    photoCaption: "Bringing nature-based care to West Africa",
   },
   {
     number: "06",
     title: "Families Stay Connected",
     body: "Unlike traditional institutions, the CareFarm welcomes family visits any time. Families participate in farm life, share meals, and remain genuinely present in their loved one's world.",
+    photo: "/images/farm/farm-photo-002.jpg",
+    photoAlt: "Nigerian delegation planning West Africa CareFarm",
+    photoCaption: "Planning West Africa's first CareFarm — Nigeria leads the way",
   },
 ];
 
@@ -50,15 +69,25 @@ const differences = [
 export default function HowItWorksPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-20 bg-hero-gradient relative overflow-hidden">
-        <div className="container-wide relative z-10">
+      {/* Hero with real farm photo */}
+      <section className="relative min-h-[55vh] flex items-end overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/farm/farm-photo-003.jpg"
+            alt="Working farmland at the Family & Care CareFarm"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/30 to-transparent" />
+        </div>
+        <div className="container-wide relative z-10 pb-16 pt-32">
           <p className="section-label" style={{ color: "#e9bf6e" }}>Our Model</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight max-w-3xl mb-6">
             How the CareFarm Model Works
           </h1>
           <p className="text-white/80 text-lg max-w-2xl leading-relaxed">
-            A fundamentally different approach to elderly care — built on community, nature, purpose, and human connection rather than clinical separation.
+            A fundamentally different approach to elderly care — built on community, nature, purpose, and human connection.
           </p>
         </div>
       </section>
@@ -75,23 +104,41 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* The 6 Steps */}
+      {/* The 6 Steps with photos */}
       <section className="py-24 bg-white">
         <div className="container-wide">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="section-label">How It Works</p>
             <h2 className="section-title">Six Principles of the CareFarm</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {steps.map((step) => (
-              <div key={step.number} className="p-8 border border-forest-100 rounded-sm hover:border-forest-300 hover:shadow-md transition-all duration-200">
-                <div className="font-display text-5xl font-bold text-forest-100 mb-4 leading-none">
-                  {step.number}
+          <div className="space-y-16">
+            {steps.map((step, i) => (
+              <div
+                key={step.number}
+                className={`grid md:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+              >
+                {/* Text */}
+                <div className={i % 2 === 1 ? "md:order-2" : ""}>
+                  <div className="font-display text-6xl font-bold text-forest-100 mb-4 leading-none">
+                    {step.number}
+                  </div>
+                  <h3 className="font-display text-2xl font-semibold text-forest-900 mb-4">
+                    {step.title}
+                  </h3>
+                  <p className="text-forest-700 leading-relaxed">{step.body}</p>
                 </div>
-                <h3 className="font-display text-xl font-semibold text-forest-900 mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-forest-700 text-sm leading-relaxed">{step.body}</p>
+                {/* Photo */}
+                <div className={`relative rounded-sm overflow-hidden shadow-md ${i % 2 === 1 ? "md:order-1" : ""}`} style={{ height: "300px" }}>
+                  <Image
+                    src={step.photo}
+                    alt={step.photoAlt}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-forest-950/60 to-transparent p-4">
+                    <p className="text-white text-xs">{step.photoCaption}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -140,7 +187,7 @@ export default function HowItWorksPage() {
                 The CareFarm model does not replace the family — it supports it. It provides a community that feels like family: familiar, purposeful, connected to nature, and rooted in respect.
               </p>
               <p className="section-body mb-8">
-                Adapted from the award-winning German model and tailored to the Nigerian and West African context, Family Care Farms Initiatives Nigeria is building something that belongs here.
+                Adapted from the award-winning German model and tailored to the Nigerian and West African context, Family Care Farm Initiatives Nigeria is building something that belongs here.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/apply/resident" className="btn-primary">
@@ -151,17 +198,16 @@ export default function HowItWorksPage() {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            {/* 2x2 photo grid */}
+            <div className="grid grid-cols-2 gap-3">
               {[
-                ["🌾", "Rural Job Creation", "Every farm creates employment for local caregivers, farm workers, cooks, and educators"],
-                ["🐓", "Food Security", "Residents and staff benefit from on-farm food production — vegetables, poultry, livestock"],
-                ["👴", "Elder Dignity", "Residents are participants, not patients — retaining purpose and value in community"],
-                ["🎓", "Skills Training", "Internationally certified training programs build West Africa's professional care workforce"],
-              ].map(([icon, title, body]) => (
-                <div key={title} className="bg-cream-50 border border-cream-200 rounded-sm p-5">
-                  <div className="text-3xl mb-3">{icon}</div>
-                  <h3 className="font-display font-semibold text-forest-900 text-sm mb-2">{title}</h3>
-                  <p className="text-forest-700 text-xs leading-relaxed">{body}</p>
+                { src: "/images/dnp25/dnp25-photo-005.jpg", alt: "MOU signing ceremony Düsseldorf" },
+                { src: "/images/dnp25/dnp25-photo-003.jpg", alt: "Guido Pusch receiving DNP25 award" },
+                { src: "/images/dnp25/dnp25-photo-001.jpg", alt: "DNP25 winners on stage" },
+                { src: "/images/farm/farm-photo-002.jpg", alt: "Nigeria map discussion in Germany" },
+              ].map((photo, i) => (
+                <div key={i} className="relative rounded-sm overflow-hidden" style={{ height: "180px" }}>
+                  <Image src={photo.src} alt={photo.alt} fill className="object-cover" />
                 </div>
               ))}
             </div>
