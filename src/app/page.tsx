@@ -41,7 +41,7 @@ export default function HomePage() {
               Care That Feels<span className="block italic text-earth-300">Like Coming Home.</span>
             </h1>
             <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
-              Family & CareFarm Nigeria integrates professional elderly care with farm life, community, and nature — building West Africa&apos;s first CareFarm, certified by Family &amp; Care International, Germany.
+              Family Care Farm Initiatives Nigeria integrates professional elderly care with farm life, community, and nature — building West Africa&apos;s first CareFarm, certified by Family &amp; Care International, Germany.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/model/how-it-works" className="btn-earth">Discover Our Model <ArrowRight className="w-4 h-4" /></Link>
@@ -103,7 +103,7 @@ export default function HomePage() {
               <p className="section-label">What We Do</p>
               <h2 className="section-title mb-6">A New Way to Care for Our Elders in Nigeria</h2>
               <p className="section-body mb-6">In Nigeria, caring for the elderly has always been a family matter. But urbanisation, migration, and changing family structures are making that harder. Elders are being left behind — separated from community, purpose, and the dignity they deserve.</p>
-              <p className="section-body mb-8">Family & CareFarm Nigeria offers a third way: not a clinical nursing home, and not a burden on overstretched families — but a living, breathing community where elders participate, belong, and thrive.</p>
+              <p className="section-body mb-8">Family Care Farm Initiatives Nigeria offers a third way: not a clinical nursing home, and not a burden on overstretched families — but a living, breathing community where elders participate, belong, and thrive.</p>
               <Link href="/model/how-it-works" className="btn-primary">How It Works <ArrowRight className="w-4 h-4" /></Link>
             </div>
             <div className="grid grid-cols-2 gap-4">

@@ -14,7 +14,7 @@ export function Footer() {
               <div className="w-10 h-10 shrink-0">
                 <Image
                   src="/images/logo-fc-official.png"
-                  alt="Family & CareFarm Nigeria"
+                  alt="Family Care Farm Initiatives Nigeria"
                   width={40}
                   height={40}
                 />
@@ -132,7 +132,7 @@ export function Footer() {
       <div className="border-t border-forest-800">
         <div className="container-wide py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-forest-500">
           <p>
-            © {new Date().getFullYear()} Family & CareFarm Nigeria · West Africa.
+            © {new Date().getFullYear()} Family Care Farm Initiatives Nigeria · West Africa.
             All rights reserved.
           </p>
           <div className="flex items-center gap-6">
