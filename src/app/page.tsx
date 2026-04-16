@@ -188,6 +188,40 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* PHOTO GALLERY */}
+      <section className="py-16 bg-cream-50">
+        <div className="container-wide">
+          <div className="text-center mb-10">
+            <p className="section-label">Our Journey</p>
+            <h2 className="section-title">At the Heart of the Partnership</h2>
+            <p className="section-body max-w-xl mx-auto mt-3">
+              The Nigerian delegation at the Deutscher Nachhaltigkeitspreis (DNP25) awards
+              ceremony in Düsseldorf, December 2025 — where the MOU was signed.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            {[
+              { src: "/images/gallery/mou-signing-4-people.jpg", alt: "MOU signing — all four signatories" },
+              { src: "/images/gallery/mou-signing-alt1.jpg", alt: "MOU signing ceremony" },
+              { src: "/images/gallery/mou-signing-alt2.jpg", alt: "Partnership agreement signing" },
+              { src: "/images/gallery/mou-signing-alt3.jpg", alt: "Nigerian delegation with Guido Pusch" },
+              { src: "/images/gallery/mou-signing-alt4.jpg", alt: "MOU document exchange" },
+              { src: "/images/gallery/mou-signing-3-people.jpg", alt: "Three-party signing" },
+              { src: "/images/gallery/mou-document-review.jpg", alt: "Reviewing the MOU document" },
+              { src: "/images/gallery/dnp25-award-stage.jpg", alt: "DNP25 award ceremony stage" },
+              { src: "/images/gallery/dnp25-handshake1.jpg", alt: "Partnership handshake" },
+              { src: "/images/gallery/dnp25-handshake2.jpg", alt: "Networking at DNP25 gala" },
+              { src: "/images/gallery/mou-signing-3-closeup.jpg", alt: "Close-up MOU signing" },
+              { src: "/images/gallery/partnership-awards.jpg", alt: "Team with DNP25 awards" },
+            ].map((photo) => (
+              <div key={photo.src} className="relative rounded-sm overflow-hidden" style={{ height: "180px" }}>
+                <Image src={photo.src} alt={photo.alt} fill className="object-cover hover:scale-105 transition-transform duration-300" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
